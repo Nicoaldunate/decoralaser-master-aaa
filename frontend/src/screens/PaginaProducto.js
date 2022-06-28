@@ -88,7 +88,7 @@ function PaginaProducto() {
               </Helmet>
               <h1>{producto.nombre}</h1>
             </ListGroup.Item>
-            <ListGroup.Item>price: ${producto.precio}</ListGroup.Item>
+            <ListGroup.Item>precio: ${producto.precio}</ListGroup.Item>
             <ListGroup>
               descripcion:
               <p>{producto.descripcion}</p>
