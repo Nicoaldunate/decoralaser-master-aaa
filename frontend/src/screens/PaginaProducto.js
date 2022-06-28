@@ -121,7 +121,7 @@ function PaginaProducto() {
                   <ListGroup.Item>
                     <div className='d-grid'>
                       <Button onClick={addToCartHandler} variant='primary'>
-                        Add to Cart
+                        añadir al carrito
                       </Button>
                     </div>
                   </ListGroup.Item>

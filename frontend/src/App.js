@@ -44,7 +44,7 @@ function App() {
               <Navbar.Collapse id='basic-navbar-nav'>
                 <Nav className='me-auto  w-100  justify-content-end'>
                   <Link to='/cart' className='nav-link'>
-                    Cart
+                    Carrito
                     {cart.cartItems.length > 0 && (
                       <Badge pill bg='danger'>
                         {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
@@ -54,10 +54,12 @@ function App() {
                   {userInfo ? (
                     <NavDropdown title={userInfo.name} id='basic-nav-dropdown'>
                       <LinkContainer to='/profile'>
-                        <NavDropdown.Item>User Profile</NavDropdown.Item>
+                        <NavDropdown.Item>Perfil de Usuario</NavDropdown.Item>
                       </LinkContainer>
                       <LinkContainer to='/orderhistory'>
-                        <NavDropdown.Item>Order History</NavDropdown.Item>
+                        <NavDropdown.Item>
+                          Historial de ordenes
+                        </NavDropdown.Item>
                       </LinkContainer>
                       <NavDropdown.Divider />
                       <Link
@@ -65,12 +67,12 @@ function App() {
                         to='#signout'
                         onClick={signoutHandler}
                       >
-                        Sign Out
+                        Salir
                       </Link>
                     </NavDropdown>
                   ) : (
                     <Link className='nav-link' to='/signin'>
-                      Sign In
+                      Entrar
                     </Link>
                   )}
                 </Nav>

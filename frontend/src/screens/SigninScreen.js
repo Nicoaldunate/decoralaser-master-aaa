@@ -46,7 +46,7 @@ export default function SigninScreen() {
       <Helmet>
         <title>Registrate</title>
       </Helmet>
-      <h1 className='my-3'>Crea Tu Cuenta</h1>
+      <h1 className='my-3'>Acceder</h1>
       <Form onSubmit={submitHandler}>
         {' '}
         <Form.Group className='mb-3' controlId='email'>
